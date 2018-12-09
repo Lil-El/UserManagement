@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="/api/add" class="button is-large">添加</a>
+
+    <table class="table is-bordered is-striped is-hoverable">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{each users as val index}}
+            <tr>
+                <td>{{val.id}}</td>
+                <td>{{val.name}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

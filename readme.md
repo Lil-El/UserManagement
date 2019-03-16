@@ -34,7 +34,7 @@ mocha // 自动查找test下的文件，进行测试
 npm install should -D
 ```
 
-最好安装 shouldjs，比 assert 更强大的断言库
+使用shouldjs，比 assert 更强大的断言库
 
 ```shell
 npm install istanbul -g //覆盖率测试
